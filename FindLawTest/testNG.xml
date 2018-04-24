@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RegressionTestQA">
+    <test name="ToolsQA">
+ 	<parameter name="suitename" value="Smoke_Chrome" />
+	<parameter name="environment" value="UAT" />
+	<parameter name="browsertype" value="chrome" />
+	<parameter name="sUsername" value="testuser_1"/>
+	<parameter name="sPassword" value="Test@123"/>
+		<classes>
+		    <class name="tr.findlaw.tests.TestngParameters" />
+		</classes>
+    </test>
+</suite>

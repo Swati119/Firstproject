@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionTestQA]">
+  <parameter name="environment" value="UAT"/>
+  <parameter name="suitename" value="Smoke_Chrome"/>
+  <parameter name="browsertype" value="chrome"/>
+  <test name="SmokeTest(failed)">
+    <classes>
+      <class name="tr.findlaw.tests.Sprint_6">
+        <methods>
+          <include name="setup"/>
+          <include name="SOC_4102"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tr.findlaw.tests.Sprint_6 -->
+    </classes>
+  </test> <!-- SmokeTest(failed) -->
+</suite> <!-- Failed suite [RegressionTestQA] -->
