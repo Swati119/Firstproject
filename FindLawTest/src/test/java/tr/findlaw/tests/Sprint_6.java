@@ -32,7 +32,7 @@ public class Sprint_6 extends FindlawBaseTest{
 	
 	
 	
-	@Test( enabled = true, description = "SOC-4102 Ability to bridge IM & Firmsites for only 30,60,90 days for 100 percent")
+	@Test( enabled = false, description = "SOC-4102 Ability to bridge IM & Firmsites for only 30,60,90 days for 100 percent")
 	public void SOC_4102() {
 		TestNGCustomReporter.log(logger,"======================== Login Page script execution started ========================");
 		applicationLogin();
@@ -160,7 +160,7 @@ public class Sprint_6 extends FindlawBaseTest{
 	}
 	
 
-	@Test(enabled = true, description = "SOC-4106_As a CDC, I have the ability to chose contract terms available 1,2, 3 for Firmsite and IM solutions")
+	@Test(enabled = false, description = "SOC-4106_As a CDC, I have the ability to chose contract terms available 1,2, 3 for Firmsite and IM solutions")
 	public void SOC_4106()  {
 		TestNGCustomReporter.log(logger,"======================== Login Page script execution started ========================");
 		applicationLogin();
@@ -682,6 +682,16 @@ public class Sprint_6 extends FindlawBaseTest{
 		
 	}
 	
-	
+	@Test(enabled = true, description = "SOC-4482 Ability to bridge IM  for only 30,60,90 days at 100 percent")
+	public void test1() {
+		TestNGCustomReporter.log(logger,"======================== Login Page script execution started ========================");
+		applicationLogin();
+		TestNGCustomReporter.log(logger,"======================== Accountpage script execution started ========================");
+		accountpage = new Accountpage(driver);
+		accountpage.SearchExistAccount();
+		TestNGCustomReporter.log(logger,"======================== Create New Contact script execution started ========================");
+		contactsPage = new ContactsPage(driver);
+		String ContactName=contactsPage.createNewContact();
+	}
 	
 }
